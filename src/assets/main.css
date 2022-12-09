@@ -3,6 +3,7 @@ body{
   width: 100%;
   font-family: "Times New Roman", Times, serif;
   background-color: rgb(14, 14, 15);
+  box-sizing: border-box;
 }
 h1{
   font-size: 3em;

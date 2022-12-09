@@ -2,82 +2,83 @@
 
 </script>
 <template>
-<div class="container contact-form">
-            <div class="contact-image">
-                <img src="https://res.cloudinary.com/difrw7gue/image/upload/v1670565373/rocket_contact_zzke7p.png" alt="rocket_contact"/>
-            </div>
-            <form>
+    <div class="container">
+        <form>
+            <div class="section">
                 <h3>Contactame</h3>
-               <div class="row">
-                    <div class="f1">
-                        <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Nombre" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Correo" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Asunto" value="" />
-                        </div>
-                    </div>
-                    <div class="f2">
-                        <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Mensaje" style="width: 100%; height: 150px;"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                    </div>
-                </div>
-            </form>
-</div>
+                <label><img src="https://res.cloudinary.com/difrw7gue/image/upload/v1670601169/icons8-name-tag-24_xr7nzx.png"></label>
+                <input type="text" id="name" class="inputElement" required placeholder="nombre">
+            </div>
+            <div class="section">
+                <label><img src="https://res.cloudinary.com/difrw7gue/image/upload/v1670601169/icons8-mail-24_qcrywn.png"></label>
+                <input type="email" id="email" class="inputElement" required placeholder="Correo electrónico">
+            </div>
+            <div class="section">
+                <label><img src="https://res.cloudinary.com/difrw7gue/image/upload/v1670601169/icons8-composing-mail-24_aylxil.png"></label>
+                <textarea type="text" id="email" class="areaElement" required placeholder="Mensaje"></textarea>
+            </div>
+            <div class="section">
+                <input type="submit" class="submitElement">
+            </div>
+        </form>
+    </div>
 </template>
 
 <style scoped>
-.f1{
-    display: flex;
-}
-.form-group{
-    margin: 10px;
+.section{
+    margin: auto;
+    width: 90%;
+    text-align: center;
 }
 .container{
-    color: rgb(226, 207, 207);
-    text-align: center;
-}
-.contact-form{
-    background: rgb(33, 33, 36);
-    margin-top: 30px;
-    margin-bottom: 5%;
-    width: 70%;
-}
-.contact-image{
-    text-align: center;
-}
-.contact-image img{
-    border-radius: 6rem;
-    width: 11%;
-    margin-top: -3%;
-    transform: rotate(29deg);
-}
-.contact-form form{
+    background-color: #222225;
+    height: 400px;
+    margin: auto;
     padding: 50px;
+    color: rgb(226, 207, 207);
+    overflow: hidden;
+    margin-bottom: 50px;
 }
-.contact-form form .row{
-    margin-bottom: 7%;
+.inputElement{
+    margin: 10px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgb(14, 14, 15);
+    width: 90%;
+    padding: 10px;
+    color: rgb(226, 207, 207);
 }
-.contact-form h3{
-    margin-bottom: 8%;
-    text-align: center;
-    margin-top: -50px;
+
+.areaElement{
+    margin: 10px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgb(14, 14, 15);
+    width: 90%;
+    padding: 10px;
+    color: rgb(226, 207, 207);
 }
-.contact-form .btnContact {
-    width: 50%;
-    border: none;
-    padding: 1.5%;
-    background:  rgb(228, 151, 9);
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
+
+.submitElement{
+    background-color: rgb(228, 151, 9);
+    border-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.inputElement:focus {
+        outline: none;
+}
+
+img{
+    width: 30px;
+    height: 30px;
 }
 
 </style>
