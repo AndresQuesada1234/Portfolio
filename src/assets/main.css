@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(14, 14, 15);
+}
+h1{
+  font-size: 3em;
+}
+h6{
+  font-size: 1.5em;
+}
+p{
+  font-size: 1.3em;
+}
+
+.navbar{
+  z-index: 4;
+}
+.navbar-brand{
+  padding-left: 30px;
+}
+.fade-enter-active {
+  animation: fade 0.2s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-leave-active {
+  animation: slide 0.2s ease-in-out;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-300px);
+  }
+}
